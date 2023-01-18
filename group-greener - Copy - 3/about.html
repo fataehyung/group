@@ -1,0 +1,178 @@
+<html>
+<head>
+<title>Greener's Company</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bg-1">
+        <div class="navigation">
+            <h1><img src="assets/image/LOGO.png"></h1>
+            <div class="timer">
+              <div class="display-time">
+                <div id="Time"></div>
+              </div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                  <a href="team.html">Team</a>
+                  <ul>
+                    <li><a href="greeting.html">CEO Greeting</a></li>
+                    <li><a href="team.html">Team Profile</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="description.html">Product</a>
+                    <ul>   
+                        <li><a href="description.html">Description</a></li> 
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="about-content">
+            <div class="about-title">
+              <h1> About Greener </h1>
+              <p> A company name inspired by an obsession with the greenery of the environment and a love of 
+                harmony. Other reasons for choosing Grenner as the company's name are because we would like to align with our mission, vision and objectives for our customers to provide electrical goods and environmentally friendly home appliances. Hence, since the products that we would like to produce are environmentally friendly thus by naming our company Greener would help us to keep on producing a product that would not give harm our environment and at the same time help us to keep on remembering our vision, mission and objectives.
+              </p>
+              <p>So, Greener companies will look at realistic and pragmatic facts and identify the main risks, 
+                challenges and obstacles you can expect on the way, from here the company can provide solutions and ways to deal with them. Apart from 
+                that, weaknesses in business ideas, business models and strategies, can be fixed and improved. In addition, critical mistakes before they arise, the things must do is have to avoid as much as can be. Therefore, the business plan is the company's safety net. Naturally, the business plan cannot eliminate risk, but it can significantly reduce it and prepare the company for any challenges the company may encounter.</p>
+                <a href="video.html"><span></span>View More</a>
+            </div>
+        </div>
+
+        <div class="bg-1">
+          <div class="about-box">
+            <div class="about-card">
+              <h6> Vision </h6>
+              <div class="content-exp">
+                <p> Insists on becoming a giant company that leads the home appliance and electrical goods industry that is environmentally friendly.</p>
+              </div>
+            </div>
+      
+            <div class="about-card">
+              <h6> Mission </h6>
+              <div class="content-exp">
+                <p> Ensuring that all products produced meet the criteria and standards that has been set. </p>
+              </div>
+            </div>
+      
+            <div class="about-card">
+              <h6> Objectives </h6>
+              <div class="content-exp">
+                <ol> 
+                    <li>Ensuring environmentally friendly hardware products are available to consumers.</li><br>
+                    <li>Providing home hardware equipment at affordable prices for consumers.</li><br>
+                    <li>Providing user-friendly household appliances that do not cause health problems.</li>
+                    </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+            
+
+
+
+
+    <div class="Footer-container">
+        <div class="footer">
+            <div class="footer-heading footer1">
+                <h2>COMPANY</h2>
+                <a href="location.html">Location</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="description.html">Product</a>
+            </div>
+            <div class="footer-heading footer2">
+                <h2>ADDRESS</h2>
+                <a href="https://goo.gl/maps/DZaqPXAmkdxBT8Sb9"><p>Jalan Anggerik Mokara 31/47, <br><br>  Kota Kemuning, 40460, <br><br> Shah Alam, Selangor</p></a>
+            </div>
+            <div class="footer-heading footer4">
+                <h2>OPERATION HOURS</h2>
+                <table>
+                    <tr>
+                        <td>Mon - Fri</td>
+                        <td>7 a.m. - 7 p.m</td>
+                    </tr>
+                    <tr>
+                        <td>Sat - Sun</td>
+                        <td>Holiday</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="footer-heading footer3">
+                <h2>CONNECT WITH US</h2>
+                <ul>
+                    <center>
+                    <a href="https://www.facebook.com/@greener.official/"><img src="assets/image/facebook.png"></a>
+                    <a href="https://twitter.com/@Sya_honour/"><img src="assets/image/twitter.png"></a>
+                    <a href="https://www.instagram.com/greener.my/"><img src="assets/image/instagram.png"></a>
+                    </center>  
+                </ul>
+            </div>
+        </div>
+        <h4><marquee>MAKE OUR ENVIRONMENT GREENER</marquee></h4>
+    </div> 
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+  
+
+
+
+<script>
+
+let mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+setInterval(()=>{
+          const time = document.querySelector(".display-time #Time");
+          let date = new Date();
+          let hours = date.getHours();
+          let minutes = date.getMinutes();
+          let seconds = date.getSeconds();
+          let day_night = "AM";
+          if(hours > 12){
+          day_night = "PM";
+          hours = hours - 12;
+           }
+if(seconds < 10){
+             seconds = "0" + seconds;
+           }
+           if(minutes < 10){
+             minutes = "0" + minutes;
+           }
+           if(hours < 10){
+             hours = "0" + hours;
+           }
+           time.textContent = hours + ":" + minutes + ":" + seconds + " "+ day_night;
+         });
+</script>
+
+    
+
+</body>
+</html>
